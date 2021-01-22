@@ -827,7 +827,9 @@ p {
     fill: currentColor;
 }
 
-
+.comment{
+    margin-bottom: 20px;
+}
 
 .textarea{
     width: 100%;
@@ -838,9 +840,80 @@ p {
     border-radius: 4px;
     resize: none;
     outline: none;
+    margin: 0;
 }
 
 .textarea:focus,
 .textarea:hover{
     border: 1px solid var(--accent-color);
+}
+
+.contract{
+    position: relative;
+   display: flex;
+   justify-content: center;
+   margin-bottom: 30px;
+}
+
+.old-checkbox{
+    margin-right: 7px;
+
+    opacity: 0;
+}
+
+.contract-text{
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+
+    color: var(--main-text-color);
+}
+.contract > a{
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    margin-left: 3px;
+
+    color: var(--accent-color);
+}
+
+.contract label::before{
+    position: absolute;
+    display: inline-flex;
+    content: "";
+    width: 16px;
+    height: 15px;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    border: 1px solid var(--title-text-color);
+    border-radius: 2px;
+}
+.contract input[type="checkbox"]:hover + label::before,
+.contract input[type="checkbox"]:focus + label::before{
+    border: 1px solid var(--accent-color);
+}
+
+.contract input[type="checkbox"]:checked + label::before{
+    background-color: var(--accent-color);
+    background-image: url(../img/icon\ check.svg);
+    background-size: contain;
+    background-origin: border-box;
+    border-color: transparent;
+}
+
+.form-button{
+    padding: 10px 56px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    border: 0;
+    background-color: var(--accent-color);
+    margin: auto;
+
+    color:var(--main-white-color);
 }
