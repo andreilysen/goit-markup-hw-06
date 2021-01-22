@@ -888,6 +888,7 @@ p {
     transform: translateY(-50%);
     border: 1px solid var(--title-text-color);
     border-radius: 2px;
+    transition: background-color var(--animation-duration) var(--animation-timing);
 }
 .contract input[type="checkbox"]:hover + label::before,
 .contract input[type="checkbox"]:focus + label::before{
