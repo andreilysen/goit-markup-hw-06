@@ -803,10 +803,11 @@ p {
     width: 100%;
     padding: 11px 12px;
     padding-left: 42px;
+    transition: border-color var(--animation-duration) var(--animation-timing);
 }
 .modal-input:hover,
 .modal-input:focus{
-    border: 1px solid var(--accent-color);
+    border-color: var(--accent-color);
     color: var(--accent-color);
     outline: none;
 }
@@ -823,7 +824,7 @@ p {
     transform: translateY(-50%);
     width: 18px;
     height: 18px;
-
+    
     fill: currentColor;
 }
 
@@ -841,11 +842,12 @@ p {
     resize: none;
     outline: none;
     margin: 0;
+    transition: border-color var(--animation-duration) var(--animation-timing);
 }
 
 .textarea:focus,
 .textarea:hover{
-    border: 1px solid var(--accent-color);
+    border-color: var(--accent-color);
 }
 
 .contract{
