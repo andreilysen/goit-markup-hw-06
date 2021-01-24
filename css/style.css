@@ -472,6 +472,7 @@ p {
 
 .footer > .container{
     display: flex;
+    justify-content: space-between;
 }
 
 .footer-logo{
@@ -536,6 +537,7 @@ p {
     box-sizing: border-box;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
+    color: rgba(255, 255, 255, 0.6);
 }
 
 .footer-button{
@@ -877,6 +879,8 @@ p {
     margin-left: 3px;
 
     color: var(--accent-color);
+    text-decoration-line: underline;
+    text-decoration-skip-ink: none;
 }
 
 .contract label::before{
